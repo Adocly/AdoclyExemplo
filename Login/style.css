@@ -6,7 +6,7 @@
 body{
     background-color: brown;
 }
-form{
+.form{
     display: flex;
     justify-content: center;
     margin-top: 10%;
