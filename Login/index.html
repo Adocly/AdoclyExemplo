@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adocly Exemplo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form action="">
+        <div class="login">
+            <h1>Caixa de entrada</h1>
+            <input type="email" placeholder="Email:" class="InputDecoration" id="email" >
+            <input type="password" placeholder="Senha:" class="InputDecoration" id="senha">
+            <button id="Benviar" class="BtnDecoration">Login</button>
+            <button id="btn-cadastro" class="BtnDecoration">Cadastro</button>
+            <button id="btn-redefinir" class="BtnDecoration">Redefinir Senha</button>
+
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyBDQr3dVrFaYPtkCx_1_BVHrhNFdTYbC44",
+          authDomain: "adoclyexemp.firebaseapp.com",
+          projectId: "adoclyexemp",
+          storageBucket: "adoclyexemp.appspot.com",
+          messagingSenderId: "1094989538278",
+          appId: "1:1094989538278:web:4c3b012c2ee672f1f2ec27",
+          databaseURL: "https://adoclyexemp-default-rtdb.firebaseio.com/",
+          measurementId: "G-C59RL1ZH50"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        //PROCURAR EMAIL CADASTRADO
+    const  BLogin = document.querySelector("#Benviar")  
+    const email =  document.querySelector("#email").value //variável que pega o valor do email
+    const senha = document.getElementById("#senha").value 
+
+
+    </script>
+</body>
+</html>
